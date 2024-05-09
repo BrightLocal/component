@@ -102,7 +102,7 @@ abstract class AbstractProcess
             ]);
         });
         if(!in_array(PHP_OS,['Darwin','CYGWIN','WINNT']) && !empty($this->getProcessName())){
-            $process->name($this->getProcessName());
+            $process->setProcessName($this->getProcessName());
         }
         swoole_event_add($this->swooleProcess->pipe, function(){
             try{
