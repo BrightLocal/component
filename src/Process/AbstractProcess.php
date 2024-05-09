@@ -12,6 +12,7 @@ use OpenSwoole\Coroutine;
 use OpenSwoole\Event;
 use OpenSwoole\Process;
 use OpenSwoole\Coroutine\Scheduler;
+use OpenSwoole\Util;
 
 abstract class AbstractProcess
 {
@@ -102,7 +103,8 @@ abstract class AbstractProcess
             ]);
         });
         if(!in_array(PHP_OS,['Darwin','CYGWIN','WINNT']) && !empty($this->getProcessName())){
-            $process->setProcessName($this->getProcessName());
+            Util::setProcessName($this->getProcessName());
+            //$process->setProcessName($this->getProcessName());
         }
         swoole_event_add($this->swooleProcess->pipe, function(){
             try{
