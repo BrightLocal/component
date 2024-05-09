@@ -4,7 +4,7 @@
 namespace EasySwoole\Component;
 
 
-use Swoole\Coroutine\Channel;
+use OpenSwoole\Coroutine\Channel;
 
 class WaitGroup
 {

@@ -4,8 +4,8 @@
 namespace EasySwoole\Component;
 
 
-use Swoole\Coroutine\Channel;
-use Swoole\Coroutine;
+use OpenSwoole\Coroutine\Channel;
+use OpenSwoole\Coroutine;
 
 class Csp
 {

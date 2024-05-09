@@ -9,8 +9,8 @@
 namespace EasySwoole\Component;
 
 
-use Swoole\Atomic;
-use Swoole\Atomic\Long;
+use OpenSwoole\Atomic;
+use OpenSwoole\Atomic\Long;
 
 
 class AtomicManager

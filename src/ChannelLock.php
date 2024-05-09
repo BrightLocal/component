@@ -4,8 +4,8 @@
 namespace EasySwoole\Component;
 
 
-use Swoole\Coroutine;
-use Swoole\Coroutine\Channel;
+use OpenSwoole\Coroutine;
+use OpenSwoole\Coroutine\Channel;
 
 class ChannelLock
 {

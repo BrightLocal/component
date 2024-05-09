@@ -2,7 +2,7 @@
 
 ```
 use EasySwoole\Component\CoroutineRunner\Runner;
-use Swoole\Coroutine\Scheduler;
+use OpenSwoole\Coroutine\Scheduler;
 use EasySwoole\Component\CoroutineRunner\Task;
 $scheduler = new Scheduler;
 $scheduler->add(function () {

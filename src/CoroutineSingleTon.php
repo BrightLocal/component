@@ -4,7 +4,7 @@
 namespace EasySwoole\Component;
 
 
-use Swoole\Coroutine;
+use OpenSwoole\Coroutine;
 
 trait CoroutineSingleTon
 {

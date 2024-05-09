@@ -8,10 +8,10 @@
 
 namespace EasySwoole\Component\Process;
 use EasySwoole\Component\Timer;
-use Swoole\Coroutine;
-use Swoole\Event;
-use Swoole\Process;
-use Swoole\Coroutine\Scheduler;
+use OpenSwoole\Coroutine;
+use OpenSwoole\Event;
+use OpenSwoole\Process;
+use OpenSwoole\Coroutine\Scheduler;
 
 abstract class AbstractProcess
 {

@@ -7,7 +7,7 @@
  */
 
 namespace EasySwoole\Component;
-use Swoole\Timer as SWTimer;
+use OpenSwoole\Timer as SWTimer;
 
 class Timer
 {

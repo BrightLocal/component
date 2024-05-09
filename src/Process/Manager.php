@@ -4,9 +4,9 @@
 namespace EasySwoole\Component\Process;
 
 use EasySwoole\Component\Singleton;
-use Swoole\Process;
-use Swoole\Server;
-use Swoole\Table;
+use OpenSwoole\Process;
+use OpenSwoole\Server;
+use OpenSwoole\Table;
 
 class Manager
 {

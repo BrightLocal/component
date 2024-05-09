@@ -6,8 +6,8 @@ namespace EasySwoole\Component\Process\Socket;
 
 use EasySwoole\Component\Process\AbstractProcess;
 use EasySwoole\Component\Process\Exception;
-use Swoole\Coroutine\Socket;
-use Swoole\Coroutine;
+use OpenSwoole\Coroutine\Socket;
+use OpenSwoole\Coroutine;
 
 abstract class AbstractTcpProcess extends AbstractProcess
 {

@@ -4,8 +4,8 @@
 namespace EasySwoole\Component;
 
 
-use Swoole\Coroutine;
-use Swoole\Table;
+use OpenSwoole\Coroutine;
+use OpenSwoole\Table;
 
 class ReadyScheduler
 {

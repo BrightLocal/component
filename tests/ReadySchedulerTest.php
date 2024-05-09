@@ -6,7 +6,7 @@ namespace EasySwoole\Component\Tests;
 
 use EasySwoole\Component\ReadyScheduler;
 use PHPUnit\Framework\TestCase;
-use Swoole\Coroutine;
+use OpenSwoole\Coroutine;
 
 class ReadySchedulerTest extends TestCase
 {

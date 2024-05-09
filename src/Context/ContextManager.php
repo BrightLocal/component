@@ -11,7 +11,7 @@ namespace EasySwoole\Component\Context;
 
 use EasySwoole\Component\Context\Exception\ModifyError;
 use EasySwoole\Component\Singleton;
-use Swoole\Coroutine;
+use OpenSwoole\Coroutine;
 
 class ContextManager
 {

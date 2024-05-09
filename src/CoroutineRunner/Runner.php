@@ -4,8 +4,8 @@
 namespace EasySwoole\Component\CoroutineRunner;
 
 
-use Swoole\Coroutine\Channel;
-use Swoole\Coroutine;
+use OpenSwoole\Coroutine\Channel;
+use OpenSwoole\Coroutine;
 
 class Runner
 {

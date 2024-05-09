@@ -9,7 +9,7 @@
 namespace EasySwoole\Component;
 
 
-use Swoole\Table;
+use OpenSwoole\Table;
 
 class TableManager
 {
