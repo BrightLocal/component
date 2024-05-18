@@ -95,7 +95,7 @@ abstract class AbstractProcess
             'startUpTime'=>time(),
             "hash"=>spl_object_hash($this->getProcess())
         ]);
-        \Swoole\Timer::tick(1*1000,function ()use($table,$process){
+        \OpenSwoole\Timer::tick(1*1000,function ()use($table,$process){
             $table->set($process->pid,[
                 'memoryUsage'=>memory_get_usage(),
                 'memoryPeakUsage'=>memory_get_peak_usage(true)
@@ -118,7 +118,7 @@ abstract class AbstractProcess
             }catch (\Throwable $throwable){
                 $this->onException($throwable);
             } finally {
-                \Swoole\Timer::clearAll();
+                \OpenSwoole\Timer::clearAll();
                 Process::signal(SIGTERM, null);
                 Event::exit();
             }
@@ -139,11 +139,11 @@ abstract class AbstractProcess
                     $channel->push(1);
                 });
                 $channel->pop($this->config->getMaxExitWaitTime());
-                \Swoole\Timer::clearAll();
+                \OpenSwoole\Timer::clearAll();
                 Event::exit();
             });
             $schedule->start();
-            \Swoole\Timer::clearAll();
+            \OpenSwoole\Timer::clearAll();
             Event::exit();
         });
         try{
