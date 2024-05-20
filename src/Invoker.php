@@ -8,7 +8,7 @@
 
 namespace EasySwoole\Component;
 
-use OpenSwoole\Process;
+use \OpenSwoole\Process;
 
 class Invoker
 {
